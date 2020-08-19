@@ -1,7 +1,7 @@
 # COVID-19 cases and deaths based on WHO data 
 
 ## Description
-This is a simple Excel dashboard that takes COVID-19 cases and deaths data from World Health Organization (WHO) to show how various countries rank in terms of cases and deaths and show daily trend per country. I created this dashboard as a personal projec to apply what I've learned from the Udemy course [Visually Effective Dashboard](https://www.udemy.com/course/excel-dashboards-reports/) but thought I might as well share this work to others who might benefit from it. 
+This is a simple Excel dashboard that takes COVID-19 cases and deaths data from World Health Organization (WHO) to show how various countries rank in terms of cases and deaths and show daily trend per country. I created this dashboard as a personal project to apply what I've learned from the Udemy course [Visually Effective Dashboard](https://www.udemy.com/course/excel-dashboards-reports/) but thought I might as well share this work to others who might benefit from it. 
 
 This is best used with Excel 2016 (or higher) and Excel 365 as it uses slicers which is available on Excel 2013 or higher version. I used Excel 2016 for Mac to create this file.    
   
