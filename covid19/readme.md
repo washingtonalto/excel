@@ -5,4 +5,4 @@
 ![Screenshot 2](screenshots/screenshot02.png)
 
 ## Download
-You can download the latest Excel file from [link](COVID-19 Dashboard based on WHO data (shared).xlsm)
+You can download the latest Excel file from [link](https://github.com/washingtonalto/exceldashboards/blob/master/covid19/COVID-19%20Dashboard%20based%20on%20WHO%20data%20(shared).xlsm)
