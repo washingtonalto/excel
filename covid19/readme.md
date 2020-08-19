@@ -1,3 +1,5 @@
 # COVID-19 cases and deaths based on WHO data 
 ## Screenshots
-![Screenshot 1](/screenshots/screenshot01.png)
+![Screenshot 1](screenshots/screenshot01.png)
+
+![Screenshot 2](screenshots/screenshot02.png)
