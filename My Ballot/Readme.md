@@ -1,6 +1,6 @@
-# 2025 Philippine Election Ballot JSON Viewer (Excel-based)
+# My Ballot (Excel-based)
 
-This Excel-based tool allows you to load and review official candidate data for the 2025 Philippine national and local elections. The source data is from the [COMELEC Ballot Face Templates](https://comelec.gov.ph/?r=2025NLE/2025BallotFace) and converted into a structured JSON format. This tool enables you to preview candidates by position and fill out your personalized ballot.
+This Excel-based tool allows you to load candidates data for the 2025 Philippine national and local elections and choose them in My Ballot tab. The source data is from the [COMELEC Ballot Face Templates](https://comelec.gov.ph/?r=2025NLE/2025BallotFace) and converted into a structured JSON format. This tool enables you to preview candidates by position and fill out your personalized ballot.
 
 ## 📋 Features
 
