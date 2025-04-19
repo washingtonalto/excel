@@ -29,7 +29,7 @@ This Excel-based tool allows you to load and review official candidate data for 
    - Place all JSON outputs in a local folder of your choice
 
 4. **Load JSON into Excel:**
-   - Open the [Excel file](https://github.com/washingtonalto/excel/blob/master/My%20Ballot/My%20Election%20Ballot%20-%20v07.xlsx)
+   - Open the [Excel file](./My Ballot/My Election Ballot - v07.xlsx)
    - Go to the `Instructions and Lookup` tab
    - Set the JSON folder path in **cell C3**
    - Select **Data → Refresh All** to upload and update candidate data
@@ -45,11 +45,11 @@ This Excel-based tool allows you to load and review official candidate data for 
 ## 📁 Folder Structure
 
 - **My Ballot/**
-  - **GenAI Prompt to convert PDF to JSON/**  
+  - **[GenAI Prompt to convert PDF to JSON/](./GenAI%20Prompt%20to%20convert%20PDF%20to%20JSON)**  
     GenAI prompt you can use to convert from PDF to JSON format
-  - **JSON/**  
+  - **[JSON/](./JSON)**  
     Folder containing JSON files converted from selected 2025 Ballot Face Templates from the Comelec website
-  - **PDF/**  
+  - **[PDF/](./PDF)**  
     Folder containing selected downloaded 2025 Ballot Face Templates PDFs from the Comelec website
   - **BallotViewer2025.xlsx**  
     Main Excel workbook
