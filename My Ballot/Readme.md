@@ -29,7 +29,7 @@ This Excel-based tool allows you to load and review official candidate data for 
    - Place all JSON outputs in a local folder of your choice
 
 4. **Load JSON into Excel:**
-   - Open the [Excel file](./My%20Ballot/My%20Election%20Ballot%20-%20v07.xlsx)
+   - Open the [Excel file](./My%20Election%20Ballot%20-%20v07.xlsx)
    - Go to the `Instructions and Lookup` tab
    - Set the JSON folder path in **cell C3**
    - Select **Data → Refresh All** to upload and update candidate data
@@ -51,7 +51,7 @@ This Excel-based tool allows you to load and review official candidate data for 
     Folder containing JSON files converted from selected 2025 Ballot Face Templates from the Comelec website
   - **[PDF/](./PDF)**  
     Folder containing selected downloaded 2025 Ballot Face Templates PDFs from the Comelec website
-  - **[My Election Ballot - v07.xlsx](./My%20Ballot/My%20Election%20Ballot%20-%20v07.xlsx)**  
+  - **[My Election Ballot - v07.xlsx](./My%20Election%20Ballot%20-%20v07.xlsx)**  
     Main Excel workbook
   - **LICENSE.txt**  
     License information
