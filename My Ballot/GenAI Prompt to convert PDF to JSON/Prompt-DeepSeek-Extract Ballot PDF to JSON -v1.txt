@@ -1,0 +1,49 @@
+Parse the attached election ballot PDF for [LOCATION] into a structured JSON format. Follow these guidelines:
+1.  **Metadata**: Include election date, location (district/region), clustered precinct ID, and precincts in the cluster.
+    
+2.  **Positions**: List all positions (e.g., Senator, Mayor) with:
+    
+    *   `vote_for`: Number of candidates allowed per voter.
+        
+    *   Instructions in both English and Filipino.
+        
+    *   `candidates`: Array of objects with `number`, `name`, and `party` (or "IND" if independent).
+        
+3.  **Format**:
+    
+    *   Use the exact JSON structure from the previous example.
+        
+    *   Maintain consistent field names (e.g., `clustered_precinct_id`, `precincts_in_cluster`).
+        
+    *   For Party Lists, omit `party` and only include `number` and `name`.
+        
+**Example Output Snippet**:
+```json
+{
+  "election_date": "[DATE]",
+  "location": "[LOCATION]",
+  "positions": [
+    {
+      "position": "[POSITION]",
+      "vote_for": [NUMBER],
+      "candidates": [
+        {"number": 1, "name": "CANDIDATE NAME", "party": "PARTY"}
+      ]
+    }
+  ]
+}
+```
+**Notes**:
+*   Preserve all candidate names exactly as written (including punctuation/capitalization).
+    
+*   If the PDF spans multiple pages, combine data for the same position.
+    
+*   Verify all fields against the PDF to avoid omissions.
+    
+```
+---
+**How to Use**:  
+1. Replace `[LOCATION]`, `[DATE]`, etc., with the actual values from the new PDF.  
+2. For consistency, cross-check the output against the original JSON structure (e.g., nested `positions` array, field names).  
+
+```

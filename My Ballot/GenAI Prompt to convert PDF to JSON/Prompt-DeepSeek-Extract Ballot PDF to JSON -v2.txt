@@ -1,0 +1,79 @@
+Objective:
+Convert Philippine election ballot PDFs into a standardized JSON format for any legislative district, preserving bilingual instructions (English/Filipino) and candidate data.
+Strict Requirements:
+1.	Metadata (Required fields):
+	o	election_date: "MAY 12, 2025" (exact format)
+	o	location: Full district name in ALL CAPS (e.g., "DANIEL FAJARDO, CITY OF LAS PIÑAS, NATIONAL CAPITAL REGION - FOURTH DISTRICT")
+	o	clustered_precinct_id: Exact alphanumeric ID (e.g., "76010033")
+	o	precincts_in_cluster: Array of precinct codes (e.g., ["0071A", "0072A"])
+
+2.	Position Schema (Repeat for all positions):
+=====
+{
+  "position": "[Exact position name]",
+  "vote_for": [Max votes allowed],
+  "instructions": {
+    "english": "[Exact English instructions]",
+    "filipino": "[Exact Filipino translation]"
+  },
+  "candidates": [
+    {
+      "number": [Candidate number],
+      "name": "[Exact name formatting]",
+      "party": "[Party abbreviation or 'IND']"
+    }
+  ]
+}
+=====
+	o	For PARTY LIST: Omit party field, only include number and name.
+
+3.	Data Rules:
+	o	Preserve ALL original capitalization, punctuation, and line breaks in candidate names.
+	o	Handle multi-page ballots by combining data for the same position.
+	o	Treat "IND" as the party value for independent candidates.
+	o	Include ALL candidates, even if the list is long.
+
+4.	Special Cases:
+	o	If position names include bilingual text (e.g., "/ Vote for 1"), preserve both versions.
+	o	For precinct clusters spanning multiple lines, combine into a single array.
+Output Example:
+=====
+{
+  "election_date": "MAY 12, 2025",
+  "location": "[FULL DISTRICT NAME FROM PDF]",
+  "clustered_precinct_id": "[EXACT ID]",
+  "precincts_in_cluster": ["0001A", "0001B"],
+  "positions": [
+    {
+      "position": "SENATOR / Vote for 12",
+      "vote_for": 12,
+      "instructions": {
+        "english": "Mark the inside...",
+        "filipino": "Markahan ang loob..."
+      },
+      "candidates": [
+        {"number": 1, "name": "LASTNAME, FIRSTNAME", "party": "PFP"}
+      ]
+    }
+  ]
+}
+=====
+
+
+Validation Instructions:
+1.	Verify all fields against the PDF - no omissions allowed.
+2.	Maintain original PDF ordering of candidates.
+3.	Flag any inconsistencies in the source PDF for review.
+
+
+Adaptability Note:
+This template works for ALL Philippine legislative districts. The only variables are:
+	•	District name in location
+	•	Precinct IDs
+	•	Candidate lists per position
+Language Handling:
+	•	Preserve both English and Filipino text where present.
+	•	If instructions appear only once, assume they apply to both languages.
+Example Meta-Description for JSON Output:
+"Structured election ballot data compliant with COMELEC standards, containing complete candidate lists per position with bilingual instructions. Valid for all Philippine legislative districts in the 2025 national elections."
+
