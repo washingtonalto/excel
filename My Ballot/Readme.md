@@ -29,7 +29,7 @@ This Excel-based tool allows you to load and review official candidate data for 
    - Place all JSON outputs in a local folder of your choice
 
 4. **Load JSON into Excel:**
-   - Open the Excel file
+   - Open the [Excel file](https://github.com/washingtonalto/excel/blob/master/My%20Ballot/My%20Election%20Ballot%20-%20v07.xlsx)
    - Go to the `Instructions and Lookup` tab
    - Set the JSON folder path in **cell C3**
    - Select **Data → Refresh All** to upload and update candidate data
