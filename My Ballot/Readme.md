@@ -48,9 +48,9 @@ This Excel-based tool allows you to load and review official candidate data for 
   - **GenAI Prompt to convert PDF to JSON/**  
     GenAI prompt you can use to convert from PDF to JSON format
   - **JSON/**  
-    Sample JSON files converted from selected 2025 Ballot Face Templates from the Comelec website
+    Folder containing JSON files converted from selected 2025 Ballot Face Templates from the Comelec website
   - **PDF/**  
-    Downloaded 2025 Ballot Face Templates from the Comelec website
+    Folder containing selected downloaded 2025 Ballot Face Templates PDFs from the Comelec website
   - **BallotViewer2025.xlsx**  
     Main Excel workbook
   - **LICENSE.txt**  
